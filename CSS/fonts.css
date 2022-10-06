@@ -1,0 +1,32 @@
+
+@font-face{
+	font-family:Nunito-regular;
+	src:url(../Fonts/NunitoSans/NunitoSans-Regular.ttf);
+}
+@font-face{
+	font-family:Nunito-bold;
+	src:url(../Fonts/NunitoSans/NunitoSans-Bold.ttf);
+}
+@font-face{
+	font-family:Nunito-extrabold;
+	src:url(../Fonts/NunitoSans/NunitoSans-ExtraBold.ttf);
+}
+@font-face{
+	font-family:Heebo-regular;
+	src:url(../Fonts/Heebo/Heebo-Regular.ttf);
+}
+@font-face{
+	font-family:Pacifico-regular;
+	src:url(../Fonts/Pacifico/Pacifico-Regular.ttf);
+}
+@font-face{
+	font-family:Nasa;
+	src:url("../Fonts/nasalization.otf");
+}
+
+.nunito-reg{font-family:Nunito-regular;}
+.nunito-bold{font-family:Nunito-bold;}
+
+
+
+

@@ -1,0 +1,302 @@
+/* Reset padding and margin*/
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+/*=========================*/
+
+
+html{scroll-behavior: smooth;}
+body{background-color:rgb(250,250,250);}
+
+a{text-decoration:none;color:rgb(80,80,80);}
+
+.primary-tcolor{color:rgb(80,80,80);}
+.secondary-tcolor{color:rgb(227,42,45);}
+
+/*============ Set up header =============*/
+
+
+header.active{box-shadow: 0 0 9px rgba(80,80,80,0.5);}
+.menu ul li:hover a{color:rgb(227,42,45);}
+.social-icons a:hover{color:rgb(227,42,45);}
+
+
+	/* For Desktop */
+@media screen and (min-width:1024px){
+	.phone{display:none;}
+	.tablet{display:none;}
+	.desktop{
+		display:block;
+		width:100%;height:50px;
+		position:fixed;top:0;
+		z-index: 10;
+		background-color:rgba(250,250,250,0.8);
+	}
+	
+	.container{
+		width:960px;
+		margin:0 auto;
+	}
+		
+	.logo{margin:0;}
+	.logo a{
+		color:rgb(80,80,80);
+		font-family:Nasa;
+		font-size:23pt;
+	}
+	
+	.menu{display:block;margin:0;padding:0 5%}
+	.menu ul{
+		list-style:none;font-family:Nunito-bold;font-size:11pt;
+		display:flex;
+		flex-wrap: wrap;
+		
+		justify-content: space-around;
+	}
+	.menu ul li{padding:0;}
+	.menu ul li a{color:rgb(120,120,120);display:block;}
+	
+	.social-icons{
+		display: flex;flex-wrap: wrap;justify-content: space-between;
+		padding:0 0 0 54%;
+		margin:0;
+	}
+	
+	.avoid-header{padding-top:10%;}
+	.margin-topbottom-5p{margin:200px 0;}
+}
+
+
+/*	 For Tablet */
+@media screen and (min-width:768px) and (max-width:1024px){
+	.phone{display:none;}
+	.desktop{display:none;}
+	.tablet{
+		display:block;
+		width:100%;
+		position:fixed;top:0;
+		z-index: 10;
+		background-color:rgba(250,250,250,0.9);
+	}
+	
+	.container{
+		width:768px;
+		margin:0 auto;
+	}
+	
+	.logo{margin:1% 0 0 0;}
+	.logo a{
+		color:rgb(80,80,80);
+		font-family:Nasa;
+		font-size:20pt;
+	}
+	
+	.menu{display:block;margin:1% 0;padding:0 3%}
+	.menu ul{
+		list-style:none;font-family:Nunito-bold;font-size:12pt;
+		display:flex;
+		flex-wrap: wrap;
+		
+		justify-content: space-around;
+	}
+	.menu ul li{padding:8px 0;}
+	.menu ul li a{color:rgb(120,120,120);display:block;}
+	
+	.social-icons{
+		display: flex;flex-wrap: wrap;justify-content: space-around;
+		padding:0 36%;
+		margin:2% 0;
+	}
+	.social-icons a{color:rgb(80,80,80);font-size:12pt;}
+	
+	.avoid-header{padding-top:27%;}
+	.margin-topbottom-5p{margin:150px 0;}
+}
+
+	/* For Phone */
+@media(max-width:768px){
+	.tablet{display:none;}
+	.desktop{display:none;}
+	.phone{
+		display:block;
+		width:100%;
+		position:fixed;top:0;
+		z-index: 10;
+		background-color:rgba(250,250,250,0.9);
+	}
+	
+	.container{
+		width:90%;
+		margin:0 auto;
+	}
+	
+	.logo a{
+		color:rgb(80,80,80);
+		font-family:Nasa;
+		font-size:23pt;
+	}
+	
+	.menu-button{width:36px;height:45px;align-items:center;}
+	.menu-bar1, .menu-bar2, .menu-bar3{
+		width:100%;
+		height:12%;
+		background-color:rgb(120,120,120);
+		margin: 21% 0 18% 0;
+		transition: 0.4s;
+	}
+	
+	.menu-change .menu-bar1 {transform: translate(0, 243%) rotate(-45deg);}
+	.menu-change .menu-bar2 {opacity: 0;}
+	.menu-change .menu-bar3 {transform: translate(0, -243%) rotate(45deg);}
+	
+	.menu{display:none;}
+	.menu ul{list-style:none;font-family:Nunito-bold;font-size:14pt;}
+	.menu ul li{padding:8px 0 8px 5px;}
+	.menu ul li a{color:rgb(120,120,120);display:block;}
+	
+	.avoid-header{padding-top:9%;}
+	.margin-topbottom-5p{margin:100px 0;}
+}
+
+/*===================================================================================*/
+/*===================================================================================*/
+
+
+
+
+
+
+/*============ Set up Content =============*/
+
+
+	/* For Desktop */
+@media screen and (min-width:1024px){
+	.sub-title{
+		font-family: Nasa;
+		font-size:180%;
+		
+	}
+	.title{
+		font-family: Nasa;
+		font-size:300%;
+		margin:0 0 2% 0;
+	}
+	.content{
+		font-family: Nunito-bold;
+		font-size:100%;
+		text-align: left;
+	}
+	
+}
+
+	/* For Tablet */
+@media screen and (min-width:768px) and (max-width:1024px){
+	.sub-title{
+		font-family: Nasa;
+		font-size:140%;
+		
+	}
+	.title{
+		font-family: Nasa;
+		font-size:270%;
+		margin:0 0 1% 0;
+	}
+	.content{
+		font-family: Nunito-bold;
+		font-size:100%;
+		text-align: left;
+	}
+	
+}
+
+	/* For Phone */
+@media(max-width:768px){
+	.sub-title{
+		font-family: Nasa;
+		font-size:180%;
+		text-align: center;
+		
+	}
+	.title{
+		font-family: Nasa;
+		font-size:300%;
+		margin:0 0 1% 0;
+		text-align: center;
+	}
+	.content{
+		font-family: Nunito-bold;
+		font-size:160%;
+		text-align: center;
+	}
+}
+
+/*===================================================================================*/
+/*===================================================================================*/
+
+
+
+
+
+/*============ Set up Footer =============*/
+.Footer{
+	width:100%;
+	position:fixed;bottom:0;
+	background-color: rgba(250,250,250,0.9);;
+}
+.Footer p{
+	margin: 1% auto;
+	text-align: center;
+	font-family: Nunito-regular;
+	font-size: 10pt;
+	color:rgb(80,80,80);
+}
+
+
+
+/*===================================================================================*/
+/*===================================================================================*/
+
+
+
+
+
+/*============ Set up About =============*/
+
+.About img{max-width: 100%; height: auto;}
+
+
+/*============ Set up Project =============*/
+
+.Project a img{
+	width: 100%; height: auto;
+}
+.Project>.container>.row>[class*='col-']>.row>[class*='col-']{padding:5px;}
+
+/*============ Set up Contact =============*/
+
+.Contact iframe{max-width: 100%; height: 360px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

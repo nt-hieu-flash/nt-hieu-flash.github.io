@@ -1,0 +1,45 @@
+/* CSS Document */
+
+@media screen and (min-width:1024px){
+	#rating{
+		text-align: left;
+		width:100%;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+	#rating{
+		text-align: left;
+		width:100%;
+	}
+}
+
+@media screen and (max-width:768px){
+	#rating{
+		text-align: center;
+		width:100%;
+	}
+}
+
+#rating span{
+	cursor: pointer;
+	font-size: 14pt;
+	padding:0 10px;
+	color:rgb(80,80,80);
+	opacity: 0.2;
+	transition: all 150ms;
+	display: inline-block;
+	transform-origin: center bottom;
+}
+#rating span.hover{
+	color:rgb(227,42,45);
+	opacity:1;
+	text-shadow: 0 0 3px rgba(227,42,45,0.5);
+}
+
+
+
+
+
+
+

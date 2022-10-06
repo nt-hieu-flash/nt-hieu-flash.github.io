@@ -1,0 +1,126 @@
+/* CSS Document */
+
+@media screen and (min-width:1024px){.btn-box{width: 100%;}}
+@media screen and (min-width:768px) and (max-width:1024px){.btn-box{width: 100%;}}
+@media(max-width:768px){
+	.btn-box{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.btn{
+	width:45%;height: 50px;
+	padding: 5px auto;
+	margin: 3% auto 0 auto;
+	background-color: rgba(250,250,250,0);
+	border:1px solid rgb(80,80,80);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	
+	animation: wiggle 2.7s infinite;
+}
+.btn a{
+	font-family: Nasa;
+	font-size:140%;
+	color: rgb(80,80,80);
+}
+.btn:hover{
+	border: none;
+	background-color: rgba(234,234,234,1);
+	
+	animation: none;
+}
+.btn:hover a{color:rgb(227,42,45);}
+
+@keyframes wiggle{
+	2%{ transform: translateX(-3px) rotate(-2deg);}
+	4%{ transform: translateX(3px) rotate(2deg);}
+	6%{ transform: translateX(-3px) rotate(-2deg);}
+	8%{ transform: translateX(3px) rotate(2deg);}
+	10%{ transform: translateX(-2px) rotate(-1deg);}
+	12%{ transform: translateX(2px) rotate(1deg);}
+	14%{ transform: translateX(-2px) rotate(-1deg);}
+	16%{ transform: translateX(2px) rotate(1deg);}
+	18%{ transform: translateX(-1px) rotate(0deg);}
+	20%{ transform: translateX(1px) rotate(0deg);}
+}
+
+
+
+/*=================================================================================*/
+/*=================================================================================*/
+
+
+
+
+/* Top up page button */
+
+.top-page-button.show-top-btn{display: block;}
+
+.top-page-button{
+	display:none;
+	width: 3%;height: 100px;
+	position: fixed;bottom: 0; right:0;z-index: 100;
+	margin-bottom: 3%; margin-right: 3%;
+}
+
+.arrow-up-box{
+	display:flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 100%;height: 50px;
+}
+
+.chervon{
+	position: absolute;
+	width: 30px; height: 5px;
+	opacity:0;
+	transform: translateY(10px) scale(0.3);
+	animation: move-chervon 3s ease-out infinite;
+}
+.chervon:first-child{
+	animation: move-chervon 3s ease-out 1s infinite;
+}
+.chervon:nth-child(2){
+	animation: move-chervon 3s ease-out 2s infinite;
+}
+
+.chervon:before, .chervon:after{
+	content: '';
+	position: absolute;top:0;
+	height:100%;width: 50%;
+	background-color: rgba(80,80,80,0.8);
+}
+.chervon:before{
+	left:0;
+	transform: skewY(-30deg)
+}
+.chervon:after{
+	right:0;
+	transform: skewY(30deg)
+}
+
+@keyframes move-chervon{
+	25%{opacity:1;}
+	33.3%{opacity:1;transform: translateY(-18px);}
+	66.6%{opacity:1;transform: translateY(-32px);}
+	100%{opacity:0;transform: translateY(-70px) scale(0.5);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
